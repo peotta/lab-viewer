@@ -1,0 +1,82 @@
+{
+ "codigo": "ENE0011",
+ "nome": "Laboratório de Redes",
+ "semestre": "2027/1",
+ "instituicao": "Universidade de Brasília (UnB)",
+ "departamento": "Departamento de Engenharia Elétrica (ENE)",
+ "labsDir": "laboratorios",
+ "imagesDir": "images",
+ "arquivoLab": "^(\\d+)_roteiro\\.md$",
+ "tituloPrefixo": "^Roteiro do Experimento \\d+\\s*[-:]\\s*",
+ "unidade": "Experimento",
+ "unidadeAbrev": "Exp",
+ "pastaRoteiros": "laboratorios",
+ "secaoPassos": {
+  "07": 7,
+  "08": 5,
+  "10": 7,
+  "11": 7
+ },
+ "copiar": [
+  {
+   "de": "laboratorios/topologias",
+   "para": "topologias"
+  },
+  {
+   "de": "@/assets/simul-net-logo.png",
+   "para": "images/simul-net-logo.png"
+  }
+ ],
+ "referencias": [],
+ "repositorio": "https://github.com/ProfessorLaerte/labredes",
+ "planoUrl": "https://professorlaerte.github.io/labredes/",
+ "readmeUrl": "https://github.com/ProfessorLaerte/labredes#readme",
+ "grupos": [
+  {
+   "titulo": "Fundamentos, Dispositivos e Acesso Seguro",
+   "sigla": "M1",
+   "labs": [
+    1,
+    2
+   ]
+  },
+  {
+   "titulo": "Endereçamento e Segmentação de Redes",
+   "sigla": "M2",
+   "labs": [
+    3,
+    4
+   ]
+  },
+  {
+   "titulo": "Redundância, Proteção de Camada 2 e Troubleshooting",
+   "sigla": "M3",
+   "labs": [
+    5,
+    6
+   ]
+  },
+  {
+   "titulo": "Serviços de Infraestrutura em Linux",
+   "sigla": "M4",
+   "labs": [
+    7,
+    8
+   ]
+  },
+  {
+   "titulo": "Projeto Integrador em Equipamentos Físicos",
+   "sigla": "M5",
+   "labs": [
+    9,
+    10,
+    11
+   ]
+  }
+ ],
+ "simulnet": {
+  "url": "https://peotta.github.io/Simul-Net/",
+  "imagem": "images/simul-net-logo.png",
+  "texto": "Simuladores visuais, executados no navegador, que mostram passo a passo protocolos como SSH, DHCP, ARP e ICMP, usados nestes experimentos, com diagrama de sequência, captura de pacotes e explicação. Recurso complementar, sem necessidade de instalação."
+ }
+}

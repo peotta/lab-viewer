@@ -1,0 +1,66 @@
+{
+ "codigo": "ENE0025",
+ "nome": "Protocolos de Transporte e Roteamento",
+ "semestre": "2027/1",
+ "instituicao": "Universidade de Brasília (UnB)",
+ "departamento": "Departamento de Engenharia Elétrica (ENE)",
+ "labsDir": "labs",
+ "imagesDir": "images",
+ "arquivoLab": "^lab(\\d+)\\.md$",
+ "referencias": [
+  {
+   "arquivo": "comandos.md",
+   "id": "comandos",
+   "rotulo": "Comandos de referência"
+  }
+ ],
+ "repositorio": "https://github.com/peotta/PTR",
+ "planoUrl": "https://peotta.github.io/PTR/",
+ "readmeUrl": "https://github.com/peotta/PTR#readme",
+ "grupos": [
+  {
+   "titulo": "Fundamentos, Configuração Básica e Multicast IP",
+   "sigla": "M1",
+   "labs": [
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "titulo": "Algoritmos e Roteamento Intra-Domínio",
+   "sigla": "M2",
+   "labs": [
+    4,
+    5
+   ]
+  },
+  {
+   "titulo": "Roteamento Interdomínio e MPLS",
+   "sigla": "M3",
+   "labs": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "titulo": "Segurança em Redes IP e Proteção de Serviços",
+   "sigla": "M4",
+   "labs": [
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  }
+ ],
+ "simulnet": {
+  "url": "https://peotta.github.io/Simul-Net/",
+  "imagem": "images/simul-net-logo.png",
+  "texto": "Simuladores visuais, executados no navegador, que mostram passo a passo o funcionamento dos protocolos estudados na disciplina, com diagrama de sequência ou topologia, captura de pacotes e explicação do experimento. Recurso complementar aos laboratórios do PNetLab, sem necessidade de instalação."
+ },
+ "pastaRoteiros": "labs"
+}
