@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import { Link } from 'react-router-dom';
 import { CodeBlock } from './CodeBlock';
+import { ImagemAmpliavel } from './ImagemAmpliavel';
 import { Mermaid } from './Mermaid';
 import { labs, meta, refs } from '../lib/data';
 import { rehypeHeadingIds } from '../lib/rehype-ids';
@@ -111,6 +112,9 @@ export function MarkdownView({ md, labId, steps = [], done = [], onToggle }: Pro
       img: ({ src, alt, width, height }) => {
         // O logotipo do podcast, dos blocos de material de apoio, aparece maior que o tamanho do Markdown (120 px).
         const podcast = /latencia-zero-podcast/.test(src ?? '');
+        // Logotipos pequenos ficam como estão; as demais imagens (infográficos, topologias) ganham o botão "Ampliar imagem".
+        const logo = podcast || /logo/.test(src ?? '') || (Number(width) > 0 && Number(width) <= 200);
+        if (!logo) return <ImagemAmpliavel src={imgSrc(src)} alt={alt ?? ''} width={width} height={height} />;
         return <img src={imgSrc(src)} alt={alt ?? ''} width={podcast ? 180 : width} height={podcast ? undefined : height} loading="lazy" className={podcast ? 'my-1 mx-auto' : 'my-4 mx-auto'} />;
       },
       table: ({ children }) => (
