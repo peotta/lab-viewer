@@ -1,0 +1,26 @@
+{
+ "codigo": "ENE0021",
+ "nome": "Tópicos em Redes de Comunicação 3",
+ "semestre": "2027/1",
+ "instituicao": "Universidade de Brasília (UnB)",
+ "departamento": "Departamento de Engenharia Elétrica (ENE)",
+ "labsDir": "labs",
+ "imagesDir": "images",
+ "arquivoLab": "^lab(\\d+)\\.md$",
+ "referencias": [],
+ "repositorio": "https://github.com/peotta/topicos",
+ "planoUrl": "https://peotta.github.io/topicos/",
+ "readmeUrl": "https://github.com/peotta/topicos#readme",
+ "grupos": [
+  {
+   "titulo": "Criptografia Aplicada: Simétrica, Assimétrica e Pós-Quântica",
+   "sigla": "U2",
+   "labs": [
+    1,
+    2,
+    3
+   ]
+  }
+ ],
+ "pastaRoteiros": "labs"
+}
